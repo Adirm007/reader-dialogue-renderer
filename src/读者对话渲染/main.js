@@ -162,3 +162,13 @@ ov.addEventListener('click',function(ev4){if(ev4.target===ov)closeChess();});
 sel.querySelectorAll('[data-diff]').forEach(function(btn){btn.addEventListener('click',function(){G_difficulty=btn.getAttribute('data-diff');sel.innerHTML='<div class=\"chess-stitle\">\u6267\u5b50\u9009\u62e9</div><div class=\"chess-colors\"><div class=\"chess-cbtn\" data-c=\"w\">\u2654 \u6267\u767d</div><div class=\"chess-cbtn\" data-c=\"b\">\u265a \u6267\u9ed1</div></div>';sel.querySelectorAll('[data-c]').forEach(function(cb){cb.addEventListener('click',function(){initGame(cb.getAttribute('data-c'));});});});});
 }
 initDreamSys();
+
+window.toggleMenu = toggleMenu;
+window.orderItem = orderItem;
+window.toggleSecretSong = toggleSecretSong;
+window.toggleDisplayMode = toggleDisplayMode;
+window.toggleAutoUnseal = toggleAutoUnseal;
+window.toggleSilent = toggleSilent;
+window.openChessGame = openChessGame;
+window.handleTrackBtnClick = handleTrackBtnClick;
+window.togglePlay = togglePlay;
